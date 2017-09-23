@@ -85,7 +85,7 @@ def get_company_data(company):
         print(f"bad key: {ResponseData}\n")
 
 with concurrent.futures.ProcessPoolExecutor(max_workers=MAX_THREADS) as executor:
-    for company, quote in zip(CompanyList, executor.map(get_company_data, CompanyList[:20])):
+    for company, quote in zip(CompanyList, executor.map(get_company_data, CompanyList):
         tickerData[company] = quote
 
 if('-o' in options):
